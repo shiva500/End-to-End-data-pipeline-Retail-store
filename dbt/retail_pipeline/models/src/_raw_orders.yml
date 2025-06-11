@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_orders
+    schema: RAW_ORDERS
+    tables:
+      - name: orders
+        description: "Raw orders data landed from S3 CSVs"

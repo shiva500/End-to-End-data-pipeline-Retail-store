@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_sales_summary
+    description: "Daily sales aggregates for reporting"
+    columns:
+      - name: full_date
+        description: "Date of aggregation"
+      - name: orders_count
+        description: "Total number of orders per day"
+      - name: total_revenue
+        description: "Sum of extended_amount per day"
+      - name: avg_order_value
+        description: "Average order size per day"

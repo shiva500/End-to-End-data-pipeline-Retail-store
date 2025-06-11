@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer dimension with current location"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+      - name: current_location
+        description: "Most recent known location for the customer"
