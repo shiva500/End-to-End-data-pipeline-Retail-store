@@ -1,0 +1,62 @@
+[0m15:39:56.860027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6441620c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64474a600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64646c650>]}
+
+
+============================== 15:39:56.864194 | 28349659-1ed0-4b38-9977-fd864ea45372 ==============================
+[0m15:39:56.864194 [info ] [MainThread]: Running with dbt=1.9.8
+[0m15:39:56.864713 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init retail_pipeline', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:39:56.874636 [debug] [MainThread]: Starter project path: /root/batch_project/retail-sales-de/End-to-End-data-pipeline-Retail-store/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:39:56.880730 [info ] [MainThread]: 
+Your new dbt project "retail_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:39:56.881817 [info ] [MainThread]: Setting up your profile.
+[0m15:41:43.377819 [info ] [MainThread]: Profile retail_pipeline written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:41:43.381189 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 106.50704, "process_in_blocks": "296", "process_kernel_time": 0.110033, "process_mem_max_rss": "99396", "process_out_blocks": "80", "process_user_time": 1.25611}
+[0m15:41:43.381744 [debug] [MainThread]: Command `dbt init` succeeded at 15:41:43.381615 after 106.51 seconds
+[0m15:41:43.382279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64403bce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb644277620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6443dbb30>]}
+[0m15:41:43.382797 [debug] [MainThread]: Flushing usage events
+[0m15:41:44.121409 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:29.941364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6a61820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6776a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6a62210>]}
+
+
+============================== 17:08:29.945018 | fe49871c-6e80-4d1a-ba9f-c4eaeea23b02 ==============================
+[0m17:08:29.945018 [info ] [MainThread]: Running with dbt=1.9.8
+[0m17:08:29.945556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ls --resource-type model', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:08:29.945975 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /root/batch_project/retail-sales-de/End-to-End-data-pipeline-Retail-store/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:08:29.946721 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.05163204, "process_in_blocks": "0", "process_kernel_time": 0.080253, "process_mem_max_rss": "94036", "process_out_blocks": "16", "process_user_time": 1.153643}
+[0m17:08:29.947283 [debug] [MainThread]: Command `dbt ls` failed at 17:08:29.947155 after 0.05 seconds
+[0m17:08:29.947671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6bcc680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6a61820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f91e6997e60>]}
+[0m17:08:29.948034 [debug] [MainThread]: Flushing usage events
+[0m17:08:30.231333 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:09:49.343888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1d6c9250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1dae09e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1dae0470>]}
+
+
+============================== 17:09:49.347166 | 9b860608-2e81-4d5a-9910-7376cf79c9e3 ==============================
+[0m17:09:49.347166 [info ] [MainThread]: Running with dbt=1.9.8
+[0m17:09:49.347723 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:09:49.348141 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /root/batch_project/retail-sales-de/End-to-End-data-pipeline-Retail-store/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:09:49.348932 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.052227397, "process_in_blocks": "0", "process_kernel_time": 0.120644, "process_mem_max_rss": "94164", "process_out_blocks": "8", "process_user_time": 1.156175}
+[0m17:09:49.349355 [debug] [MainThread]: Command `dbt run` failed at 17:09:49.349256 after 0.05 seconds
+[0m17:09:49.349717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1d811100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1d770170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe1d5a9280>]}
+[0m17:09:49.350059 [debug] [MainThread]: Flushing usage events
+[0m17:09:49.780809 [debug] [MainThread]: An error was encountered while trying to flush usage events
